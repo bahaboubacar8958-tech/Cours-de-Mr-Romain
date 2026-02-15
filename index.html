@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Romain - Cours de Français | Groupe Scolaire Cheick Cherif Sagale</title>
+    <meta name="description" content="Cours de français pour collège par Mr Romain A. ASSOGBA - Groupe Scolaire Cheick Cherif Sagale, Guinée">
+    <meta name="keywords" content="français, cours, collège, Guinée, Mr Romain, grammaire, conjugaison, vocabulaire">
+    <meta name="author" content="Mr Romain A. ASSOGBA">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="flag-banner">
+                    <span class="flag-red"></span>
+                    <span class="flag-yellow"></span>
+                    <span class="flag-green"></span>
+                </div>
+                <p class="welcome-text">Bienvenue sur la plateforme éducative de Guinée</p>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo Sagale.jpeg" alt="Logo Sagale" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Mr Romain</h1>
+                        <span>Professeur de Français</span>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#apropos">À Propos</a></li>
+                    <li><a href="#cours">Cours</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Excellence en Français</span>
+                </div>
+                <h1>Groupe Scolaire<br><span class="highlight">Cheick Cherif Sagale</span></h1>
+                <p class="hero-subtitle">Découvrez les cours de français du collège avec Mr Romain</p>
+                <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Guinée</p>
+                <div class="hero-buttons">
+                    <a href="#cours" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i> Voir les Cours
+                    </a>
+                    <a href="#apropos" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> En Savoir Plus
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Niveaux</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-book"></i></div>
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Disciplines</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-star"></i></div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Dévouement</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,75 1440,60 L1440,120 L0,120 Z" fill="#fff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- À Propos -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">À Propos</span>
+                <h2>Notre Mission Éducative</h2>
+                <p>Former les esprits de demain avec passion et dévouement</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon red">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Passion</h3>
+                    <p>Un enseignement animé par la passion de transmettre le savoir et l'amour de la langue française.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon yellow">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>Des cours structurés pour atteindre l'excellence académique dans toutes les disciplines du français.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon green">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Croissance</h3>
+                    <p>Accompagner chaque élève dans son parcours d'apprentissage vers la réussite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cours Section -->
+    <section id="cours" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nos Cours</span>
+                <h2>Programme de Français au Collège</h2>
+                <p>Sélectionnez un niveau pour découvrir les cours disponibles</p>
+            </div>
+
+            <!-- Niveau Selection Tabs -->
+            <div class="level-tabs">
+                <button class="level-tab active" data-level="7eme">
+                    <span class="level-number">7ème</span>
+                    <span class="level-label">Année</span>
+                </button>
+                <button class="level-tab" data-level="8eme">
+                    <span class="level-number">8ème</span>
+                    <span class="level-label">Année</span>
+                </button>
+                <button class="level-tab" data-level="9eme">
+                    <span class="level-number">9ème</span>
+                    <span class="level-label">Année</span>
+                </button>
+                <button class="level-tab" data-level="10eme">
+                    <span class="level-number">10ème</span>
+                    <span class="level-label">Année</span>
+                </button>
+            </div>
+
+            <!-- 7ème Année -->
+            <div class="level-content active" id="7eme">
+                <div class="level-header">
+                    <h3><i class="fas fa-graduation-cap"></i> Cours de 7ème Année</h3>
+                    <p>Fondamentaux de la langue française</p>
+                </div>
+                <div class="disciplines-grid">
+                    <div class="discipline-card vocabulaire">
+                        <div class="discipline-icon">
+                            <i class="fas fa-spell-check"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Vocabulaire</h4>
+                            <p>Enrichissement du lexique et étude des mots</p>
+                            <ul class="topics-list">
+                                <li>Les familles de mots</li>
+                                <li>Les synonymes et antonymes</li>
+                                <li>Le champ lexical</li>
+                                <li>Les niveaux de langue</li>
+                            </ul>
+                            <a href="cours/7eme/vocabulaire.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card conjugaison">
+                        <div class="discipline-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Conjugaison</h4>
+                            <p>Maîtrise des temps et modes verbaux</p>
+                            <ul class="topics-list">
+                                <li>Le présent de l'indicatif</li>
+                                <li>L'imparfait</li>
+                                <li>Le passé composé</li>
+                                <li>Le futur simple</li>
+                            </ul>
+                            <a href="cours/7eme/conjugaison.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card grammaire">
+                        <div class="discipline-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Grammaire</h4>
+                            <p>Structure et analyse de la phrase</p>
+                            <ul class="topics-list">
+                                <li>La phrase simple</li>
+                                <li>Les types de phrases</li>
+                                <li>Les fonctions grammaticales</li>
+                                <li>Les déterminants</li>
+                            </ul>
+                            <a href="cours/7eme/grammaire.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card orthographe">
+                        <div class="discipline-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Orthographe</h4>
+                            <p>Règles d'écriture et accords</p>
+                            <ul class="topics-list">
+                                <li>Les accords sujet-verbe</li>
+                                <li>Les homophones</li>
+                                <li>Le pluriel des noms</li>
+                                <li>Les accents</li>
+                            </ul>
+                            <a href="cours/7eme/orthographe.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card expression">
+                        <div class="discipline-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Expression Écrite</h4>
+                            <p>Techniques de rédaction</p>
+                            <ul class="topics-list">
+                                <li>Le récit</li>
+                                <li>La description</li>
+                                <li>Le dialogue</li>
+                                <li>La lettre</li>
+                            </ul>
+                            <a href="cours/7eme/expression.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8ème Année -->
+            <div class="level-content" id="8eme">
+                <div class="level-header">
+                    <h3><i class="fas fa-graduation-cap"></i> Cours de 8ème Année</h3>
+                    <p>Approfondissement et nouvelles compétences</p>
+                </div>
+                <div class="disciplines-grid">
+                    <div class="discipline-card vocabulaire">
+                        <div class="discipline-icon">
+                            <i class="fas fa-spell-check"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Vocabulaire</h4>
+                            <p>Vocabulaire avancé et expressions</p>
+                            <ul class="topics-list">
+                                <li>Étymologie des mots</li>
+                                <li>Les figures de style</li>
+                                <li>Le vocabulaire thématique</li>
+                                <li>Les expressions idiomatiques</li>
+                            </ul>
+                            <a href="cours/8eme/vocabulaire.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card conjugaison">
+                        <div class="discipline-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Conjugaison</h4>
+                            <p>Temps composés et modes avancés</p>
+                            <ul class="topics-list">
+                                <li>Le plus-que-parfait</li>
+                                <li>Le conditionnel</li>
+                                <li>Le subjonctif</li>
+                                <li>L'impératif</li>
+                            </ul>
+                            <a href="cours/8eme/conjugaison.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card grammaire">
+                        <div class="discipline-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Grammaire</h4>
+                            <p>Phrases complexes et analyse</p>
+                            <ul class="topics-list">
+                                <li>La phrase complexe</li>
+                                <li>Les propositions</li>
+                                <li>Les pronoms relatifs</li>
+                                <li>La voix passive</li>
+                            </ul>
+                            <a href="cours/8eme/grammaire.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card orthographe">
+                        <div class="discipline-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Orthographe</h4>
+                            <p>Orthographe grammaticale avancée</p>
+                            <ul class="topics-list">
+                                <li>Les participes passés</li>
+                                <li>Les accords complexes</li>
+                                <li>Les doubles consonnes</li>
+                                <li>La ponctuation</li>
+                            </ul>
+                            <a href="cours/8eme/orthographe.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card expression">
+                        <div class="discipline-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Expression Écrite</h4>
+                            <p>Rédaction avancée</p>
+                            <ul class="topics-list">
+                                <li>L'argumentation</li>
+                                <li>Le compte rendu</li>
+                                <li>Le résumé</li>
+                                <li>La dissertation</li>
+                            </ul>
+                            <a href="cours/8eme/expression.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card image">
+                        <div class="discipline-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Étude de l'Image</h4>
+                            <p>Analyse visuelle et sémiologie</p>
+                            <ul class="topics-list">
+                                <li>Lecture de l'image</li>
+                                <li>La publicité</li>
+                                <li>La photographie</li>
+                                <li>L'image et le texte</li>
+                            </ul>
+                            <a href="cours/8eme/image.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9ème Année -->
+            <div class="level-content" id="9eme">
+                <div class="level-header">
+                    <h3><i class="fas fa-graduation-cap"></i> Cours de 9ème Année</h3>
+                    <p>Préparation aux examens - M. Romain A. ASSOGBA</p>
+                </div>
+                <div class="disciplines-grid">
+                    <div class="discipline-card vocabulaire">
+                        <div class="discipline-icon">
+                            <i class="fas fa-spell-check"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Vocabulaire</h4>
+                            <p>Enrichissement lexical et polysémie</p>
+                            <ul class="topics-list">
+                                <li>Utilisation des dictionnaires</li>
+                                <li>Les homonymes et homophones</li>
+                                <li>Les homographes</li>
+                                <li>Le vocabulaire journalistique</li>
+                                <li>La métaphore</li>
+                            </ul>
+                            <a href="cours/9eme/vocabulaire.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card conjugaison">
+                        <div class="discipline-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Conjugaison</h4>
+                            <p>Modes et temps verbaux avancés</p>
+                            <ul class="topics-list">
+                                <li>Les modes conditionnel et impératif</li>
+                                <li>Les verbes en -eler et -eter</li>
+                                <li>Les auxiliaires être et avoir</li>
+                                <li>Les périphrases verbales</li>
+                                <li>L'aspect des temps</li>
+                            </ul>
+                            <a href="cours/9eme/conjugaison.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card grammaire">
+                        <div class="discipline-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Grammaire</h4>
+                            <p>Analyse et structure de la phrase</p>
+                            <ul class="topics-list">
+                                <li>La phrase simple</li>
+                                <li>Le groupe nominal (GN)</li>
+                                <li>La pronominalisation</li>
+                                <li>Les différents types de pronoms</li>
+                                <li>L'analyse grammaticale</li>
+                                <li>Les propositions subordonnées</li>
+                            </ul>
+                            <a href="cours/9eme/grammaire.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card orthographe">
+                        <div class="discipline-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Orthographe</h4>
+                            <p>Règles d'écriture et accords</p>
+                            <ul class="topics-list">
+                                <li>Accord du participe passé</li>
+                                <li>Participe passé des verbes pronominaux</li>
+                                <li>Genre et nombre des noms</li>
+                                <li>Le pluriel des noms composés</li>
+                                <li>Dictées préparées</li>
+                            </ul>
+                            <a href="cours/9eme/orthographe.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card expression">
+                        <div class="discipline-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Expression Écrite</h4>
+                            <p>Techniques de rédaction</p>
+                            <ul class="topics-list">
+                                <li>La rédaction</li>
+                                <li>Le résumé de texte</li>
+                                <li>La correspondance</li>
+                                <li>Le compte-rendu</li>
+                                <li>Le texte narratif</li>
+                                <li>La description et le portrait</li>
+                            </ul>
+                            <a href="cours/9eme/expression.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card lecture">
+                        <div class="discipline-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Lecture Expliquée</h4>
+                            <p>Analyse et compréhension de textes</p>
+                            <ul class="topics-list">
+                                <li>La vie en société</li>
+                                <li>Les conditions de vie</li>
+                                <li>Le respect d'autrui</li>
+                                <li>Les métiers africains</li>
+                                <li>Les moyens d'information</li>
+                                <li>Les mouvements de populations</li>
+                            </ul>
+                            <a href="cours/9eme/lecture.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10ème Année -->
+            <div class="level-content" id="10eme">
+                <div class="level-header">
+                    <h3><i class="fas fa-graduation-cap"></i> Cours de 10ème Année</h3>
+                    <p>Niveau avancé - M. Romain A. ASSOGBA</p>
+                </div>
+                <div class="disciplines-grid">
+                    <div class="discipline-card vocabulaire">
+                        <div class="discipline-icon">
+                            <i class="fas fa-spell-check"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Vocabulaire</h4>
+                            <p>Figures de style et enrichissement</p>
+                            <ul class="topics-list">
+                                <li>Les figures de style</li>
+                                <li>La métaphore et la métonymie</li>
+                                <li>La comparaison et l'hyperbole</li>
+                                <li>Les synonymes et antonymes</li>
+                                <li>Le champ lexical</li>
+                            </ul>
+                            <a href="cours/10eme/vocabulaire.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card conjugaison">
+                        <div class="discipline-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Conjugaison</h4>
+                            <p>Verbes irréguliers et concordance</p>
+                            <ul class="topics-list">
+                                <li>Verbes du 3ème groupe</li>
+                                <li>Concordance des temps et modes</li>
+                                <li>Verbes transitifs et intransitifs</li>
+                                <li>Formes actives et passives</li>
+                                <li>L'accord du verbe avec le sujet</li>
+                            </ul>
+                            <a href="cours/10eme/conjugaison.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card grammaire">
+                        <div class="discipline-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Grammaire</h4>
+                            <p>Analyse et structures complexes</p>
+                            <ul class="topics-list">
+                                <li>Étude des modes et temps</li>
+                                <li>L'analyse grammaticale</li>
+                                <li>La phrase complexe</li>
+                                <li>Les pronoms et leurs emplois</li>
+                                <li>La tournure impersonnelle</li>
+                                <li>Mots variables et invariables</li>
+                            </ul>
+                            <a href="cours/10eme/grammaire.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card orthographe">
+                        <div class="discipline-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Orthographe</h4>
+                            <p>Règles avancées et ponctuation</p>
+                            <ul class="topics-list">
+                                <li>Familles de mots</li>
+                                <li>Les signes de ponctuation</li>
+                                <li>L'accord du participe passé</li>
+                                <li>Homophones et paronymes</li>
+                                <li>Évolution orthographique</li>
+                            </ul>
+                            <a href="cours/10eme/orthographe.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card expression">
+                        <div class="discipline-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Expression Écrite</h4>
+                            <p>Rédaction et types de textes</p>
+                            <ul class="topics-list">
+                                <li>L'anecdote et fiche de lecture</li>
+                                <li>Le dialogue</li>
+                                <li>Les types de récits</li>
+                                <li>La rédaction</li>
+                                <li>Résumer une phrase complexe</li>
+                            </ul>
+                            <a href="cours/10eme/expression.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discipline-card lecture">
+                        <div class="discipline-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <div class="discipline-content">
+                            <h4>Lecture Expliquée</h4>
+                            <p>Analyse littéraire et thèmes de vie</p>
+                            <ul class="topics-list">
+                                <li>Les âges de la vie</li>
+                                <li>L'enfance et l'adolescence</li>
+                                <li>Les conflits de générations</li>
+                                <li>La famille et les cérémonies</li>
+                                <li>Les traditions orales</li>
+                                <li>Le folklore et la musique</li>
+                            </ul>
+                            <a href="cours/10eme/lecture.html" class="discipline-btn">
+                                <span>Accéder au cours</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-badge">Contact</span>
+                <h2>Contactez Mr Romain</h2>
+                <p>Pour toute question concernant les cours</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Établissement</h4>
+                            <p>Groupe Scolaire Cheick Cherif Sagale</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Localisation</h4>
+                            <p>Guinée</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Professeur</h4>
+                            <p>Mr Romain - Enseignant de Français</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3><i class="fas fa-envelope"></i> Envoyez un Message</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Sélectionnez un niveau</option>
+                                <option value="7eme">7ème Année</option>
+                                <option value="8eme">8ème Année</option>
+                                <option value="9eme">9ème Année</option>
+                                <option value="10eme">10ème Année</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Votre message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-paper-plane"></i> Envoyer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,0 720,120 1080,60 C1260,30 1380,45 1440,60 L1440,0 L0,0 Z" fill="#fff"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo Sagale.jpeg" alt="Logo" class="footer-logo">
+                    <h3>Groupe Scolaire Cheick Cherif Sagale</h3>
+                    <p>Excellence éducative en Guinée</p>
+                    <div class="guinea-colors">
+                        <span class="color-block red"></span>
+                        <span class="color-block yellow"></span>
+                        <span class="color-block green"></span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#cours">Cours</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Niveaux</h4>
+                    <ul>
+                        <li><a href="#7eme">7ème Année</a></li>
+                        <li><a href="#8eme">8ème Année</a></li>
+                        <li><a href="#9eme">9ème Année</a></li>
+                        <li><a href="#10eme">10ème Année</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Groupe Scolaire Cheick Cherif Sagale - Mr Romain | Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

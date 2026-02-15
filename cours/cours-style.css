@@ -1,0 +1,589 @@
+/* =====================================================
+   STYLE DES PAGES DE COURS
+   Mr Romain - Groupe Scolaire Cheick Cherif Sagale
+   ===================================================== */
+
+/* Variables */
+:root {
+    --red: #CE1126;
+    --red-dark: #A30D1E;
+    --yellow: #FCD116;
+    --yellow-dark: #D4A500;
+    --green: #009460;
+    --green-dark: #006B45;
+    --white: #FFFFFF;
+    --gray-100: #F8F9FA;
+    --gray-200: #E9ECEF;
+    --gray-600: #6C757D;
+    --gray-800: #343A40;
+    --gray-900: #212529;
+    --font-primary: 'Poppins', sans-serif;
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+    --radius-md: 12px;
+    --radius-lg: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--gray-800);
+    line-height: 1.7;
+    background-color: var(--gray-100);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Course Header */
+.course-header {
+    background: var(--white);
+    padding: 15px 0;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.course-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gray-800);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: var(--green);
+    color: var(--white);
+}
+
+.course-badge {
+    background: linear-gradient(135deg, var(--green), var(--green-dark));
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Course Hero */
+.course-hero {
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Backgrounds par discipline */
+.vocabulaire-bg {
+    background: linear-gradient(135deg, var(--red), var(--red-dark));
+}
+
+.conjugaison-bg {
+    background: linear-gradient(135deg, var(--yellow), var(--yellow-dark));
+}
+
+.conjugaison-bg .course-hero-content h1,
+.conjugaison-bg .course-hero-content p {
+    color: var(--gray-900);
+}
+
+.grammaire-bg {
+    background: linear-gradient(135deg, var(--green), var(--green-dark));
+}
+
+.orthographe-bg {
+    background: linear-gradient(135deg, var(--red), var(--yellow));
+}
+
+.orthographe-bg .course-hero-content h1,
+.orthographe-bg .course-hero-content p {
+    color: var(--gray-900);
+}
+
+.expression-bg {
+    background: linear-gradient(135deg, var(--yellow), var(--green));
+}
+
+.expression-bg .course-hero-content h1,
+.expression-bg .course-hero-content p {
+    color: var(--gray-900);
+}
+
+.image-bg {
+    background: linear-gradient(135deg, var(--green), var(--red));
+}
+
+.course-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.course-icon {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    backdrop-filter: blur(10px);
+}
+
+.course-icon i {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.conjugaison-bg .course-icon i,
+.orthographe-bg .course-icon i,
+.expression-bg .course-icon i {
+    color: var(--gray-900);
+}
+
+.course-hero h1 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.course-hero p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Course Main */
+.course-main {
+    padding: 50px 0;
+}
+
+/* Course Sections */
+.course-section {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow-md);
+}
+
+.course-section h2 {
+    font-size: 1.5rem;
+    color: var(--gray-900);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--green);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.course-section h2 i {
+    color: var(--green);
+}
+
+/* Programme List */
+.programme-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.programme-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background: var(--gray-100);
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.programme-item:hover {
+    background: var(--white);
+    border-left-color: var(--green);
+    box-shadow: var(--shadow-md);
+    transform: translateX(5px);
+}
+
+.item-number {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, var(--green), var(--green-dark));
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+/* Lesson Boxes */
+.lesson-box {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: var(--radius-md);
+    border-left: 5px solid;
+}
+
+.lesson-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lesson-box h4 {
+    font-size: 1rem;
+    margin: 15px 0 10px;
+    color: var(--gray-800);
+}
+
+.lesson-box ul, .lesson-box ol {
+    margin-left: 20px;
+}
+
+.lesson-box li {
+    margin-bottom: 8px;
+}
+
+/* Corpus Box */
+.lesson-box.corpus {
+    background: linear-gradient(135deg, #FFF9E6, #FFF3CD);
+    border-color: var(--yellow);
+}
+
+.lesson-box.corpus h3 {
+    color: var(--yellow-dark);
+}
+
+.lesson-box.corpus h3 i {
+    color: var(--yellow-dark);
+}
+
+/* Observation Box */
+.lesson-box.observation {
+    background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
+    border-color: var(--green);
+}
+
+.lesson-box.observation h3 {
+    color: var(--green-dark);
+}
+
+.lesson-box.observation h3 i {
+    color: var(--green-dark);
+}
+
+/* Resume Box */
+.lesson-box.resume {
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+    border-color: #2196F3;
+}
+
+.lesson-box.resume h3 {
+    color: #1565C0;
+}
+
+.lesson-box.resume h3 i {
+    color: #1565C0;
+}
+
+/* Exercices Box */
+.lesson-box.exercices {
+    background: linear-gradient(135deg, #FCE4EC, #F8BBD9);
+    border-color: var(--red);
+}
+
+.lesson-box.exercices h3 {
+    color: var(--red-dark);
+}
+
+.lesson-box.exercices h3 i {
+    color: var(--red-dark);
+}
+
+.exercice {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px 20px;
+    border-radius: var(--radius-md);
+    margin-top: 15px;
+}
+
+.exercice h4 {
+    color: var(--red-dark);
+    margin-bottom: 10px;
+}
+
+/* Example Box */
+.example-box {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px 20px;
+    border-radius: var(--radius-md);
+    margin: 15px 0;
+}
+
+/* Definition Box */
+.definition-box {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: var(--radius-md);
+    margin-top: 20px;
+}
+
+.definition-box h4 {
+    color: #1565C0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.definition-box p {
+    margin-bottom: 12px;
+    padding-left: 15px;
+    border-left: 3px solid #2196F3;
+}
+
+.definition-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Course Navigation */
+.course-navigation {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-md);
+}
+
+.course-navigation h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: var(--gray-800);
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.nav-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 15px;
+    background: var(--gray-100);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--gray-800);
+    transition: all 0.3s ease;
+}
+
+.nav-card:hover {
+    background: linear-gradient(135deg, var(--green), var(--green-dark));
+    color: var(--white);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.nav-card i {
+    font-size: 1.8rem;
+    color: var(--green);
+    transition: color 0.3s ease;
+}
+
+.nav-card:hover i {
+    color: var(--white);
+}
+
+.nav-card span {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Course Footer */
+.course-footer {
+    background: var(--gray-900);
+    color: var(--white);
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+.course-footer p {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .course-hero {
+        padding: 40px 0;
+    }
+
+    .course-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .course-section {
+        padding: 25px;
+    }
+
+    .lesson-box {
+        padding: 20px;
+    }
+
+    .programme-list {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .course-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .back-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .course-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Texte mis en valeur */
+strong {
+    color: var(--green-dark);
+}
+
+em {
+    color: var(--red-dark);
+    font-style: italic;
+}
+
+/* Tables */
+.lesson-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.lesson-table th,
+.lesson-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.lesson-table th {
+    background: var(--green);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.lesson-table tr:hover {
+    background: var(--gray-100);
+}
+
+/* Notes */
+.note-box {
+    background: linear-gradient(135deg, #FFF8E1, #FFECB3);
+    border-left: 5px solid var(--yellow);
+    padding: 15px 20px;
+    border-radius: var(--radius-md);
+    margin: 15px 0;
+}
+
+.note-box strong {
+    color: var(--yellow-dark);
+}
+
+/* Texte du cours */
+.course-text {
+    background: var(--gray-100);
+    padding: 25px;
+    border-radius: var(--radius-md);
+    margin: 20px 0;
+    border-left: 5px solid var(--green);
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.course-text p {
+    margin-bottom: 15px;
+}
+
+.course-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Questions */
+.questions-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.questions-list li {
+    padding: 10px 15px;
+    background: var(--gray-100);
+    border-radius: var(--radius-md);
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.questions-list li strong {
+    color: var(--green);
+}
